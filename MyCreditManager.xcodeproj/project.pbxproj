@@ -13,6 +13,7 @@
 		E81D312B2923652E0012989E /* CommandX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D312A2923652E0012989E /* CommandX.swift */; };
 		E81D312D292365450012989E /* CommandInsertStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D312C292365450012989E /* CommandInsertStudent.swift */; };
 		E81D31302923656D0012989E /* ReportCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D312F2923656D0012989E /* ReportCard.swift */; };
+		E81D3132292365BB0012989E /* CommandDeleteStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D3131292365BB0012989E /* CommandDeleteStudent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		E81D312A2923652E0012989E /* CommandX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandX.swift; sourceTree = "<group>"; };
 		E81D312C292365450012989E /* CommandInsertStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandInsertStudent.swift; sourceTree = "<group>"; };
 		E81D312F2923656D0012989E /* ReportCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCard.swift; sourceTree = "<group>"; };
+		E81D3131292365BB0012989E /* CommandDeleteStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDeleteStudent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				E81D31262923607E0012989E /* CommandType.swift */,
 				E81D312A2923652E0012989E /* CommandX.swift */,
 				E81D312C292365450012989E /* CommandInsertStudent.swift */,
+				E81D3131292365BB0012989E /* CommandDeleteStudent.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81D3132292365BB0012989E /* CommandDeleteStudent.swift in Sources */,
 				E81D312B2923652E0012989E /* CommandX.swift in Sources */,
 				E81D31302923656D0012989E /* ReportCard.swift in Sources */,
 				E81D311F2923592E0012989E /* main.swift in Sources */,

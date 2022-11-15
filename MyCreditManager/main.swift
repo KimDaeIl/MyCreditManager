@@ -20,6 +20,8 @@ while let command = readCommand() {
     switch command {
     case "1":
         commandType = CommandInsertStudent()
+    case "2":
+        commandType = CommandDeleteStudent()
     case "X":
         fallthrough
     case "x":
