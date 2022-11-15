@@ -29,4 +29,19 @@ struct StudentCreditReport  {
         
         return false
     }
+    
+    func finalGrade() -> String {
+        
+        if !credits.isEmpty {
+            var grade = credits.map { $0.nameWithGrade() }
+            let sum = credits.map{ $0.grade() }.reduce(0, +)
+            
+            grade.append(String(format: "평점: %.2f", sum / Double(credits.count)))
+            
+            return grade.joined(separator: "\n")
+        }
+        else {
+            return ""
+        }
+    }
 }

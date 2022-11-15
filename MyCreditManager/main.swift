@@ -26,7 +26,8 @@ while let command = readCommand() {
         commandType = CommandInsertCredit()
     case "4":
         commandType = CommandDeleteCredit()
-        
+    case "5":
+        commandType = CommandDisplayCredit()
     case "X":
         fallthrough
     case "x":

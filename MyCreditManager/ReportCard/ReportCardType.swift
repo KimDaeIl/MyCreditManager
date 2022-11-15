@@ -12,5 +12,6 @@ protocol ReportCardType {
     func delete(_ student:String) -> String
     func insert(student:String, subjectCredit: Credit) -> String
     func delete(student:String, subjectName: String) -> String
+    func displayCredit(_ student:String) -> String
 }
 

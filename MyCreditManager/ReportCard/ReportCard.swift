@@ -56,4 +56,13 @@ class ReposrtCard:ReportCardType {
             return "\(student) 학생을 찾지 못했습니다."
         }
     }
+    
+    func displayCredit(_ student: String) -> String {
+        if let creditIndex = credit.firstIndex(where: { $0.name == student}) {
+            return credit[creditIndex].finalGrade()
+        }
+        else {
+            return "\(student) 학생을 찾지 못했습니다."
+        }
+    }
 }
