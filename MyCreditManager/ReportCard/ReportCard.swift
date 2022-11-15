@@ -8,22 +8,22 @@
 import Foundation
 
 class ReposrtCard:ReportCardType {
-    private var students = [String]()
     private var credit = [StudentCreditReport]()
     
     func insert(_ student: String) -> String {
-        if !students.contains(student) {
-            students.append(student)
+        if credit.first(where: { $0.name == student }) == nil {
+            let studentCredit = StudentCreditReport(name: student, credits: [])
+            credit.append(studentCredit)
             return "\(student) 학생을 추가했습니다."
         }
         else {
-            return "\(student)이미 존재하는 학생입니다. 추가하지 않습니다."
+            return "\(student)은 이미 존재하는 학생입니다. 추가하지 않습니다."
         }
     }
     
     func delete(_ student: String) -> String {
-        if let index = students.firstIndex(of: student) {
-            return "\(students.remove(at: index)) 학생을 삭제했습니다."
+        if let index = credit.firstIndex(where: { $0.name == student }) {
+            return "\(credit.remove(at: index).name) 학생을 삭제했습니다."
         }
         else {
             return "\(student) 학생을 찾지 못했습니다."
