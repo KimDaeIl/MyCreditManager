@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E81D311F2923592E0012989E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D311E2923592E0012989E /* main.swift */; };
+		E81D31272923607E0012989E /* CommandType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D31262923607E0012989E /* CommandType.swift */; };
+		E81D3129292360900012989E /* ReportCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D3128292360900012989E /* ReportCardType.swift */; };
+		E81D312B2923652E0012989E /* CommandX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D312A2923652E0012989E /* CommandX.swift */; };
+		E81D312D292365450012989E /* CommandInsertStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D312C292365450012989E /* CommandInsertStudent.swift */; };
+		E81D31302923656D0012989E /* ReportCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D312F2923656D0012989E /* ReportCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,11 @@
 /* Begin PBXFileReference section */
 		E81D311B2923592E0012989E /* MyCreditManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MyCreditManager; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81D311E2923592E0012989E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E81D31262923607E0012989E /* CommandType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandType.swift; sourceTree = "<group>"; };
+		E81D3128292360900012989E /* ReportCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCardType.swift; sourceTree = "<group>"; };
+		E81D312A2923652E0012989E /* CommandX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandX.swift; sourceTree = "<group>"; };
+		E81D312C292365450012989E /* CommandInsertStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandInsertStudent.swift; sourceTree = "<group>"; };
+		E81D312F2923656D0012989E /* ReportCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +67,30 @@
 		E81D311D2923592E0012989E /* MyCreditManager */ = {
 			isa = PBXGroup;
 			children = (
+				E81D3125292360700012989E /* Commands */,
+				E81D312E292365590012989E /* ReportCard */,
 				E81D311E2923592E0012989E /* main.swift */,
 			);
 			path = MyCreditManager;
+			sourceTree = "<group>";
+		};
+		E81D3125292360700012989E /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				E81D31262923607E0012989E /* CommandType.swift */,
+				E81D312A2923652E0012989E /* CommandX.swift */,
+				E81D312C292365450012989E /* CommandInsertStudent.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		E81D312E292365590012989E /* ReportCard */ = {
+			isa = PBXGroup;
+			children = (
+				E81D3128292360900012989E /* ReportCardType.swift */,
+				E81D312F2923656D0012989E /* ReportCard.swift */,
+			);
+			path = ReportCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81D312B2923652E0012989E /* CommandX.swift in Sources */,
+				E81D31302923656D0012989E /* ReportCard.swift in Sources */,
 				E81D311F2923592E0012989E /* main.swift in Sources */,
+				E81D3129292360900012989E /* ReportCardType.swift in Sources */,
+				E81D312D292365450012989E /* CommandInsertStudent.swift in Sources */,
+				E81D31272923607E0012989E /* CommandType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
