@@ -8,11 +8,13 @@
 import Foundation
 
 class CommandInsertCredit: CommandType {
+    let availableCredit = ["A+", "A", "B+", "B", "C+", "C", "D+", "D", "F"]
     func run(_ reportCard: ReportCardType) {
         print("성적을 추가할 학생의 이름, 과목 이름, 성적(A+, A, F 등)을 띄어쓰기로 구분하여 차례로 작성해주세요.")
         print("입력 예) Mickey Swift A+")
         if let inputs = readLine()?.components(separatedBy: " "),
-           3 <= inputs.count  {
+           3 <= inputs.count,
+           availableCredit.contains(inputs[2]){
             let credit = Credit(name: inputs[1], credit: inputs[2])
             
             print(reportCard.insert(student: inputs[0], subjectCredit: credit))
