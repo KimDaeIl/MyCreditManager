@@ -14,6 +14,7 @@ class ReposrtCard:ReportCardType {
         if credit.first(where: { $0.name == student }) == nil {
             let studentCredit = StudentCreditReport(name: student, credits: [])
             credit.append(studentCredit)
+            
             return "\(student) 학생을 추가했습니다."
         }
         else {
@@ -40,6 +41,19 @@ class ReposrtCard:ReportCardType {
         }
         
         return "\(student) 학생의 \(subjectCredit.name) 과목이 \(subjectCredit.credit)로 추가(변경)되었습니다."
-        
+    }
+    
+    func delete(student: String, subjectName: String) -> String {
+        if let creditIndex = credit.firstIndex(where: { $0.name == student}) {
+            if credit[creditIndex].delete(subjectName) {
+                return "\(student) 학생의 \(subjectName) 과목 성적이 삭제되었습니다."
+            }
+            else {
+                return "\(student) 학생의 \(subjectName) 과목 성적을 찾지 못했습니다."
+            }
+        }
+        else {
+            return "\(student) 학생을 찾지 못했습니다."
+        }
     }
 }

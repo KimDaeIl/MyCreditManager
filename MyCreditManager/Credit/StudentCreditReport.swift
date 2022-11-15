@@ -20,4 +20,13 @@ struct StudentCreditReport  {
             credits.append(credit)
         }
     }
+    
+    mutating func delete(_ subjectName:String) -> Bool{
+        if let index = credits.firstIndex(where: {$0.name == subjectName}) {
+            credits.remove(at: index)
+            return true
+        }
+        
+        return false
+    }
 }

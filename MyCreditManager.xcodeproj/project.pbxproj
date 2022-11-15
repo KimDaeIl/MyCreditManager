@@ -17,6 +17,7 @@
 		E81D3134292367690012989E /* CommandInsertCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D3133292367690012989E /* CommandInsertCredit.swift */; };
 		E81D31392923682D0012989E /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D31382923682D0012989E /* Credit.swift */; };
 		E81D313B292368660012989E /* StudentCreditReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D313A292368660012989E /* StudentCreditReport.swift */; };
+		E81D3140292377650012989E /* CommandDeleteCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D313F292377650012989E /* CommandDeleteCredit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		E81D3133292367690012989E /* CommandInsertCredit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandInsertCredit.swift; sourceTree = "<group>"; };
 		E81D31382923682D0012989E /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
 		E81D313A292368660012989E /* StudentCreditReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCreditReport.swift; sourceTree = "<group>"; };
+		E81D313F292377650012989E /* CommandDeleteCredit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDeleteCredit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				E81D312C292365450012989E /* CommandInsertStudent.swift */,
 				E81D3131292365BB0012989E /* CommandDeleteStudent.swift */,
 				E81D3133292367690012989E /* CommandInsertCredit.swift */,
+				E81D313F292377650012989E /* CommandDeleteCredit.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				E81D3134292367690012989E /* CommandInsertCredit.swift in Sources */,
 				E81D311F2923592E0012989E /* main.swift in Sources */,
 				E81D3129292360900012989E /* ReportCardType.swift in Sources */,
+				E81D3140292377650012989E /* CommandDeleteCredit.swift in Sources */,
 				E81D312D292365450012989E /* CommandInsertStudent.swift in Sources */,
 				E81D31272923607E0012989E /* CommandType.swift in Sources */,
 			);
