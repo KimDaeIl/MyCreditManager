@@ -14,6 +14,9 @@
 		E81D312D292365450012989E /* CommandInsertStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D312C292365450012989E /* CommandInsertStudent.swift */; };
 		E81D31302923656D0012989E /* ReportCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D312F2923656D0012989E /* ReportCard.swift */; };
 		E81D3132292365BB0012989E /* CommandDeleteStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D3131292365BB0012989E /* CommandDeleteStudent.swift */; };
+		E81D3134292367690012989E /* CommandInsertCredit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D3133292367690012989E /* CommandInsertCredit.swift */; };
+		E81D31392923682D0012989E /* Credit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D31382923682D0012989E /* Credit.swift */; };
+		E81D313B292368660012989E /* StudentCreditReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81D313A292368660012989E /* StudentCreditReport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +40,9 @@
 		E81D312C292365450012989E /* CommandInsertStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandInsertStudent.swift; sourceTree = "<group>"; };
 		E81D312F2923656D0012989E /* ReportCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportCard.swift; sourceTree = "<group>"; };
 		E81D3131292365BB0012989E /* CommandDeleteStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandDeleteStudent.swift; sourceTree = "<group>"; };
+		E81D3133292367690012989E /* CommandInsertCredit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandInsertCredit.swift; sourceTree = "<group>"; };
+		E81D31382923682D0012989E /* Credit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credit.swift; sourceTree = "<group>"; };
+		E81D313A292368660012989E /* StudentCreditReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCreditReport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 		E81D311D2923592E0012989E /* MyCreditManager */ = {
 			isa = PBXGroup;
 			children = (
+				E81D3137292368250012989E /* Credit */,
 				E81D3125292360700012989E /* Commands */,
 				E81D312E292365590012989E /* ReportCard */,
 				E81D311E2923592E0012989E /* main.swift */,
@@ -83,6 +90,7 @@
 				E81D312A2923652E0012989E /* CommandX.swift */,
 				E81D312C292365450012989E /* CommandInsertStudent.swift */,
 				E81D3131292365BB0012989E /* CommandDeleteStudent.swift */,
+				E81D3133292367690012989E /* CommandInsertCredit.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -94,6 +102,15 @@
 				E81D312F2923656D0012989E /* ReportCard.swift */,
 			);
 			path = ReportCard;
+			sourceTree = "<group>";
+		};
+		E81D3137292368250012989E /* Credit */ = {
+			isa = PBXGroup;
+			children = (
+				E81D31382923682D0012989E /* Credit.swift */,
+				E81D313A292368660012989E /* StudentCreditReport.swift */,
+			);
+			path = Credit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E81D31392923682D0012989E /* Credit.swift in Sources */,
 				E81D3132292365BB0012989E /* CommandDeleteStudent.swift in Sources */,
 				E81D312B2923652E0012989E /* CommandX.swift in Sources */,
 				E81D31302923656D0012989E /* ReportCard.swift in Sources */,
+				E81D313B292368660012989E /* StudentCreditReport.swift in Sources */,
+				E81D3134292367690012989E /* CommandInsertCredit.swift in Sources */,
 				E81D311F2923592E0012989E /* main.swift in Sources */,
 				E81D3129292360900012989E /* ReportCardType.swift in Sources */,
 				E81D312D292365450012989E /* CommandInsertStudent.swift in Sources */,

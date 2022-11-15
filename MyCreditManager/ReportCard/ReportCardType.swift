@@ -10,4 +10,6 @@ import Foundation
 protocol ReportCardType {
     func insert(_ student:String) -> String
     func delete(_ student:String) -> String
+    func insert(student:String, subjectCredit: Credit) -> String
 }
+

@@ -9,6 +9,7 @@ import Foundation
 
 class ReposrtCard:ReportCardType {
     private var students = [String]()
+    private var credit = [StudentCreditReport]()
     
     func insert(_ student: String) -> String {
         if !students.contains(student) {
@@ -27,5 +28,18 @@ class ReposrtCard:ReportCardType {
         else {
             return "\(student) 학생을 찾지 못했습니다."
         }
+    }
+    
+    func insert(student: String, subjectCredit: Credit) -> String{
+        if let creditIndex = credit.firstIndex(where: { $0.name == student}) {
+            credit[creditIndex].upsert(subjectCredit)
+        }
+        else {
+            let creditReport = StudentCreditReport(name: student, credits: [subjectCredit])
+            credit.append(creditReport)
+        }
+        
+        return "\(student) 학생의 \(subjectCredit.name) 과목이 \(subjectCredit.credit)로 추가(변경)되었습니다."
+        
     }
 }
